@@ -1,0 +1,76 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>TagCanvas</title>
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+
+
+  <!-- Header Area Strat -->
+  <canvas width="500" height="500" id="myCanvas">
+    <ul>
+        <li><a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML 5</a></li>
+        <li><a data-weight="25" href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">CSS 3</a></li>
+        <li><a data-weight="15" href="https://en.wikipedia.org/wiki/Sass_(stylesheet_language)" target="_blank">SASS</a></li>
+        <li><a data-weight="15" href="https://en.wikipedia.org/wiki/Less_(stylesheet_language)" target="_blank">Less</a></li>
+        <li><a data-weight="25" href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a></li>
+        <li><a data-weight="19" href="https://en.wikipedia.org/wiki/JQuery" target="_blank">jQuery</a></li>
+        <li><a data-weight="19" href="https://en.wikipedia.org/wiki/JQueryUI" target="_blank">jQuery UI</a></li>
+        <li><a data-weight="23" href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" target="_blank">Bootstrap</a></li>
+        <li><a data-weight="25" href="https://en.wikipedia.org/wiki/PHP" target="_blank">PHP</a></li>
+        <li><a data-weight="19" href="https://en.wikipedia.org/wiki/MySQL" target="_blank">mySQl</a></li>
+        <li><a data-weight="19" href="https://en.wikipedia.org/wiki/MySQL" target="_blank">DMS</a></li>
+        <li><a data-weight="26" href="https://en.wikipedia.org/wiki/WordPress" target="_blank">Wordpress</a></li>
+        <li><a data-weight="17" href="https://en.wikipedia.org/wiki/Git" target="_blank">Git</a></li>
+        <li><a data-weight="17" href="https://en.wikipedia.org/wiki/WooCommerce" target="_blank">WooCommerce</a></li>
+        <li><a data-weight="17" href="https://en.wikipedia.org/wiki/GitHub" target="_blank">Git Hub</a></li>
+        <li><a data-weight="17" href="https://en.wikipedia.org/wiki/User_interface_design" target="_blank">UI Design</a></li>
+        <li><a data-weight="17" href="https://en.wikipedia.org/wiki/User_experience_design" target="_blank">UX Design</a></li>
+        <li><a data-weight="13" href="https://en.wikipedia.org/wiki/XML" target="_blank">XML</a></li>
+        <li><a data-weight="13" href="https://en.wikipedia.org/wiki/Mailchimp" target="_blank">Mailchimp</a></li>
+        <li><a data-weight="24" href="https://en.wikipedia.org/wiki/Adobe_XD" target="_blank">Adobe XD</a></li>
+        <li><a data-weight="24" href="https://en.wikipedia.org/wiki/Adobe_Photoshop" target="_blank">Adobe Photoshop</a></li>
+        <li><a data-weight="21" href="https://en.wikipedia.org/wiki/Node.js" target="_blank">Node JS</a></li>
+        <li><a data-weight="19" href="https://www.npmjs.com/" target="_blank">npm</a></li>
+    </ul>
+  </canvas>
+  <!-- Header Area End -->
+  
+
+  <!-- jQuery Js -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="https://www.goat1000.com/jquery.tagcanvas.min.js"></script>
+  <!-- Main Js -->
+  <script>
+    $(document).ready(function(){
+      
+      $('#myCanvas').tagcanvas({
+          textColour : '#000000',
+          outlineThickness : 0.5,
+          outlineColour : '#fe0853',
+          maxSpeed : 0.06,
+          freezeActive:true,
+          shuffleTags:true,
+          shape:'sphere',
+          zoom:0.9,
+          noSelect:true,
+          textFont:null,
+          pinchZoom:true,
+          freezeDecel:true,
+          fadeIn:3000,
+          initial: [0.3,-0.1],
+          depth : 0.8
+      });
+      
+    })
+  </script>
+</body>
+
+</html>
